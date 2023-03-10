@@ -39,7 +39,7 @@
 				<ul>
                     <xsl:apply-templates select="teatro/fechahora[contains(@dia, '2023-01')]/..">
                         <!-- xsl:sort para ordenar las fechas de la obra de teatro desde la más reciente -->
-                        <xsl:sort select="fechahora/@dia" data-type="number" order="descending"/>
+                        <xsl:sort select="fechahora/@dia" order="descending"/>
                     </xsl:apply-templates>
 				</ul>
 			</section>
